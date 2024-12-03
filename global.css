@@ -1,0 +1,48 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white);
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  color: var(--gray);
+}
+
+ul {
+  color: var(--white);
+  list-style: none;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.button {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: var(--celadon);
+  border: 1px solid var(--celadon);
+  border-radius: 24px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.button:hover {
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+}
