@@ -38,11 +38,27 @@ header {
 }
 
 .nav-list a[href='index.html'] {
+  color: var(--text);
+}
+
+.home-page .nav-list a[href='index.html'] {
+  color: var(--celadon);
+}
+
+.projects-page .nav-list a[href='projects.html'] {
+  color: var(--celadon);
+}
+
+.about-page .nav-list a[href='about-me.html'] {
+  color: var(--celadon);
+}
+
+.contact-page .nav-list a[href='contact.html'] {
   color: var(--celadon);
 }
 
 .nav-list a:hover {
-  color: var(--orange);
+  color: var(--celadon);
   transition: color 0.5s ease;
 }
 
