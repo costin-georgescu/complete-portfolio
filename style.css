@@ -247,6 +247,11 @@ h2#narrow-separator::after {
   border: 2px solid #aad2ba;
 }
 
+.projects-page .main-container {
+  margin-top: 48px;
+  margin-bottom: 360px;
+}
+
 /* Skills section */
 
 .skills {
@@ -352,7 +357,7 @@ h2#narrow-separator::after {
 }
 
 .profile-pic {
-  height: 300px;
+  height: 250px;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
@@ -361,6 +366,11 @@ h2#narrow-separator::after {
   .profile-pic {
     max-height: 250px;
   }
+}
+
+.about-page .main-container {
+  margin-top: 48px;
+  margin-bottom: 180px;
 }
 
 /* Reach out section  */
@@ -421,6 +431,11 @@ h2#narrow-separator::after {
     align-items: center;
     text-align: center;
   }
+}
+
+.contact-page .main-container {
+  margin-top: 48px;
+  margin-bottom: 584px;
 }
 
 /* Footer section */
