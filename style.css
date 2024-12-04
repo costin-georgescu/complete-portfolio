@@ -252,6 +252,25 @@ h2#narrow-separator::after {
   margin-bottom: 360px;
 }
 
+.projects-page .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.solo-header {
+  text-align: center;
+  font-weight: 600;
+}
+
+.projects-page .section-header h2 {
+  font-size: 24px;
+}
+
+.projects-page .project-cards {
+  gap: 48px;
+}
+
 /* Skills section */
 
 .skills {
