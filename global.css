@@ -28,7 +28,15 @@ ul {
 
 a {
   color: var(--white);
+  -webkit-text-fill-color: var(--white);
   text-decoration: none;
+}
+
+a:visited,
+a:active,
+a:link {
+  color: var(--white);
+  -webkit-text-fill-color: var(--white);
 }
 
 .button {
