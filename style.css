@@ -242,9 +242,15 @@ h2#narrow-separator::after {
 }
 
 .project {
-  height: 300px;
-  width: 250px;
-  border: 2px solid #aad2ba;
+  height: 250px;
+  width: 200px;
+  border: 1px solid #aad2ba;
+}
+
+@media (max-width: 1024px) {
+  .project-cards {
+    gap:48px;
+  }
 }
 
 .projects-page .main-container {
