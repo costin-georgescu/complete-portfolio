@@ -484,16 +484,20 @@ footer {
 /* Media queries */
 
 @media (max-width: 1024px) {
+
+  h2 {
+    text-align: center;
+  }
+
+  .section-header {
+    justify-content: center;
+  } 
+
   .section-header h2::after {
     display: none;
   }
   h2#narrow-separator::after {
     display: none;
   }
-}
-
-@media (max-width: 1024px) {
-  h2 {
-    text-align: center;
-  }
+ 
 }
