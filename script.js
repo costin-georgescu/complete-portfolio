@@ -1,6 +1,6 @@
 let textLength = 0;
-let text = `HTML
-CSS/SCSS/SASS
+let text = `HTML5
+CSS3/SASS/SCSS
 Bootstrap & Tailwind
 Javascript
 TypeScript
