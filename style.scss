@@ -1,87 +1,50 @@
+@use 'mixins';
+
+$desktop-width: 1024px;
+$tablet-width: 768px;
+$mobile-width: 480px;
+
 header {
     padding-top: 32px;
     padding-bottom: 8px;
 
-    @media (max-width: 1024px) {
-          padding: 0px;
+    @media (max-width: $desktop-width) {
+        padding: 0px;
     }
 
-     .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1024px;
-    margin: 0 auto;
+    .navbar {
+        max-width: $desktop-width;
+        margin: 0 auto;
 
-    @media (max-width: 1024px) {
-        padding: 0px 16px;
+        @media (max-width: $desktop-width) {
+            padding: 0px 16px;
+        }
     }
-  }
-  
-  }
-  
-  .logo-wrapper {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-image {
-    height: 32px;
-    padding-right: 4px;
-  }
-  
-  .nav-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 32px;
-  }
-  
-  .nav-list a[href='index.html'] {
-    color: var(--text);
-  }
-  
-  .home-page .nav-list a[href='index.html'] {
-    color: var(--celadon);
-  }
-  
-  .projects-page .nav-list a[href='projects.html'] {
-    color: var(--celadon);
-  }
-  
-  .about-page .nav-list a[href='about-me.html'] {
-    color: var(--celadon);
-  }
-  
-  .contact-page .nav-list a[href='contact.html'] {
-    color: var(--celadon);
-  }
-  
-  .nav-list a:hover {
-    color: var(--celadon);
-    transition: color 0.5s ease;
-  }
-  
-  .burger-icon {
-    display: none;
-  }
-  
-  @media (max-width: 480px) {
+
+    .logo-wrapper {
+       .logo-image {
+            height: 32px;
+            padding-right: 4px;
+        } 
+    }
+
     .nav-list {
-      display: none;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: $mobile-width) {
+            display: none;
+        }
+
+        a:hover {
+          color: var(--celadon);
+          transition: color 0.5s ease;
+        }
     }
-  
-    .burger-icon {
-      display: block;
-      width: 32px;
-      height: 32px;
-      filter: invert(100%) sepia(6%) saturate(2113%) hue-rotate(67deg)
-        brightness(100%) contrast(114%);
-    }
-  }
-  
+}
+
   .main-container {
-    max-width: 1024px;
+    max-width: $desktop-width;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -97,7 +60,7 @@ header {
     margin-top: 112px;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .main-container {
       padding: 16px;
     }
@@ -136,7 +99,7 @@ header {
     transition: color 0.5s ease;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .celadon-span {
       color: var(--orange);
     }
@@ -146,14 +109,14 @@ header {
     max-width: 400px;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-width) {
     .laptop-image {
       padding: 0 24px;
       width: 90%;
     }
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .laptop-image {
       padding: 0 24px;
       width: 50%;
@@ -168,7 +131,7 @@ header {
     gap: 48px;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .projects {
       flex-direction: column;
       align-items: center;
@@ -192,7 +155,7 @@ header {
     content: '';
     background-color: var(--celadon);
     width: calc(
-      1040px - 100% - 32px
+      $desktop-width - 100% - 32px
     ); /* container max-width minus h2 width minus padding */
     height: 1px;
     position: absolute;
@@ -203,7 +166,7 @@ header {
   
   h2#narrow-separator::after {
     width: calc(
-      1040px - 100% - 112px
+      $desktop-width - 100% - 112px
     ); /* container max-width minus h2 width minus padding */
   }
   
@@ -216,13 +179,13 @@ header {
     text-align: center;
   }
   
-  @media (min-width: 1024px) {
+  @media (min-width: $desktop-width) {
     .projects-link-mobile {
       display: none;
     }
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .projects-link {
       display: none;
     }
@@ -233,7 +196,7 @@ header {
     justify-content: space-around;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-width) {
     .project-cards {
       flex-direction: column;
       align-items: center;
@@ -247,7 +210,7 @@ header {
     border: 1px solid #aad2ba;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .project-cards {
       gap:48px;
     }
@@ -285,7 +248,7 @@ header {
     gap: 48px;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .skills {
       align-items: center;
     }
@@ -304,7 +267,7 @@ header {
     padding-left: 6vw;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-width) {
     .skills-logo {
       display: none;
     }
@@ -347,7 +310,7 @@ header {
     gap: 48px;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .about {
       align-items: center;
     }
@@ -359,7 +322,7 @@ header {
     align-items: center;
   }
   
-  @media (max-width: 480px) {
+  @media (max-width: $mobile-width) {
     .about-content {
       flex-direction: column;
       align-items: center;
@@ -387,7 +350,7 @@ header {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .profile-pic {
       max-height: 250px;
     }
@@ -445,7 +408,7 @@ header {
     transition: color 0.5s ease;
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
     .reach-out {
       display: flex;
       flex-direction: column;
@@ -472,7 +435,7 @@ header {
   }
   
   .footer-container {
-    max-width: 1024px;
+    max-width: $desktop-width;
     margin: 0 auto;
   }
   
@@ -483,7 +446,7 @@ header {
   
   /* Media queries */
   
-  @media (max-width: 1024px) {
+  @media (max-width: $desktop-width) {
   
     h2 {
       text-align: center;
