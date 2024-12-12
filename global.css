@@ -27,8 +27,8 @@ ul {
 }
 
 a {
-  text-decoration: none;
   color: var(--white);
+  text-decoration: none;
 }
 
 .button {
@@ -43,6 +43,6 @@ a {
 }
 
 .button:hover {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
 }
