@@ -1,7 +1,17 @@
+:export {
+  primary-color: #6b8f71;
+  background-color: #272b2d;
+  white-color: #fdfffc;
+  cerulean-color: #006e90;
+  celadon-color: #aad2ba;
+  orange-color: #f18f01;
+  gray-color: #c0c2c1;
+}
+
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
-  background-color: var(--background);
+  background-color: #272b2d;
 }
 
 h1,
@@ -10,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--white);
+  color: #fdfffc;
 }
 
 h2 {
@@ -18,24 +28,24 @@ h2 {
 }
 
 p {
-  color: var(--gray);
+  color: #c0c2c1;
 }
 
 ul {
-  color: var(--white);
+  color: #fdfffc;
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--white);
+  color: #fdfffc;
 }
 
 .button {
   font-size: 14px;
   font-weight: 500;
-  background-color: var(--celadon);
-  border: 1px solid var(--celadon);
+  background-color: #aad2ba;
+  border: 1px solid #aad2ba;
   border-radius: 24px;
   padding: 8px 16px;
   cursor: pointer;
@@ -43,6 +53,8 @@ a {
 }
 
 .button:hover {
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: #6b8f71;
+  border: 1px solid #6b8f71;
 }
+
+/*# sourceMappingURL=global.css.map */
