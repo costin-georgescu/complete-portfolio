@@ -1,9 +1,11 @@
 @use 'theme' as *;
 
+$desktop-width: 1024px;
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-color: $background-color;
+    background-color: $background;
   }
   
   h1,
@@ -12,32 +14,36 @@ body {
   h4,
   h5,
   h6 {
-    color: $white-color;
+    color: $white;
   }
   
   h2 {
     font-size: 28px;
+
+    @media (max-width: $desktop-width) {
+        text-align: center;
+    }
   }
   
   p {
-    color: $gray-color;
+    color: $gray;
   }
   
   ul {
-    color: $white-color;
+    color: $white;
     list-style: none;
   }
   
   a {
     text-decoration: none;
-    color: $white-color;
+    color: $white;
   }
   
   .button {
     font-size: 14px;
     font-weight: 500;
-    background-color: $celadon-color;
-    border: 1px solid $celadon-color;
+    background-color: $celadon;
+    border: 1px solid $celadon;
     border-radius: 24px;
     padding: 8px 16px;
     cursor: pointer;
@@ -45,7 +51,7 @@ body {
   }
   
   .button:hover {
-    background-color: $primary-color;
-    border: 1px solid $primary-color;
+    background-color: $primary;
+    border: 1px solid $primary;
   }
   

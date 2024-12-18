@@ -1,11 +1,11 @@
 :export {
-  primary-color: #6b8f71;
-  background-color: #272b2d;
-  white-color: #fdfffc;
-  cerulean-color: #006e90;
-  celadon-color: #aad2ba;
-  orange-color: #f18f01;
-  gray-color: #c0c2c1;
+  primary: #6b8f71;
+  background: #272b2d;
+  white: #fdfffc;
+  cerulean: #006e90;
+  celadon: #aad2ba;
+  orange: #f18f01;
+  gray: #c0c2c1;
 }
 
 body {
@@ -25,6 +25,11 @@ h6 {
 
 h2 {
   font-size: 28px;
+}
+@media (max-width: 1024px) {
+  h2 {
+    text-align: center;
+  }
 }
 
 p {
